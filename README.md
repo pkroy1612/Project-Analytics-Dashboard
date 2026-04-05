@@ -77,14 +77,17 @@ Your Excel file must contain the following columns:
 ```bash
 git clone https://github.com/your-username/project-analytics-dashboard.git
 cd project-analytics-dashboard
+```
 
 ### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Run the app
 ```bash
 streamlit run app.py
+```
 
 ---
 
@@ -113,9 +116,16 @@ streamlit run app.py
   Based on `%complete`  
 
 - **Behind Schedule**  
-  When:Planned Progress > Actual Progress (by > 5%)
+  When:
+  ```
+  Planned Progress > Actual Progress (by > 5%)
+  ```
+
 - **Overdue**  
-When:%Complete < 100 AND Today > End Date
+  When:
+  ```
+  %Complete < 100 AND Today > End Date
+  ```
 
 ---
 
@@ -125,4 +135,4 @@ When:%Complete < 100 AND Today > End Date
 - Implement multi-user authentication and role-based access  
 - Enable API-based data ingestion for real-time updates  
 - Add automated alerts and notifications for delays  
-- Deploy on cloud platforms (AWS / Streamlit Cloud) for wider accessibility  
+- Deploy on cloud platforms (AWS / Streamlit Cloud) for wider accessibility   
