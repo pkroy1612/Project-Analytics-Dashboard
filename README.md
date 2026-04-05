@@ -78,13 +78,16 @@ Your Excel file must contain the following columns:
 git clone https://github.com/your-username/project-analytics-dashboard.git
 cd project-analytics-dashboard
 
-**### 2. Install dependencies**
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
 
-**### 3. Run the app**
+### 3. Run the app
+```bash
 streamlit run app.py
 
 ---
+
 ## ⚙️ Usage
 
 1. Upload or specify your Excel file path  
@@ -111,11 +114,11 @@ streamlit run app.py
 
 - **Behind Schedule**  
   When:Planned Progress > Actual Progress (by > 5%)
-
 - **Overdue**  
 When:%Complete < 100 AND Today > End Date
 
 ---
+
 ## 🧠 Future Improvements
 
 - Integrate with databases (PostgreSQL / Firebase) for scalable data storage  
